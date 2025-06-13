@@ -46,14 +46,14 @@ function App() {
       <Router>
         <Navbar title="TextCaseConverter" aboutTextApp="About Me" mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
-        <div className="container my-3">
 
+        <div className="container my-3">
           <Routes>
             <Route path="/about" element={<About />} />
             <Route path="/" element={<TextForm heading="Text Case Converter — Enter your text below" mode={mode} />} />
           </Routes>
-
         </div>
+        
       </Router>
     </>
   );
